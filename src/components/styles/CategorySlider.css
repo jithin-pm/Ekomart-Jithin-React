@@ -81,16 +81,6 @@
   border: 1px solid #629D23;
 }
 
-/* Keep title and nav icons in the same row on small screens */
-@media only screen and (max-width: 767px) {
-  .rts-category-area .title-area-between {
-    flex-direction: row !important;
-    align-items: center !important;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-}
-
 /* Change navigation icon to white on hover */
 .rts-category-area .next-prev-swiper-wrapper .swiper-button-prev:hover svg,
 .rts-category-area .next-prev-swiper-wrapper .swiper-button-next:hover svg {

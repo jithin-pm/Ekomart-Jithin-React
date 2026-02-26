@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
-
+import { Link } from 'react-router-dom'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import './styles/CategorySlider.css';
 
@@ -61,13 +61,13 @@ const CategorySlider = () => {
                                 {categories.map((cat, index) => (
                                     <SwiperSlide key={index}>
                                         <div className="single-category-one">
-                                            <div>
+                                            <Link to="/shop">
                                                 <img
                                                     src={`/assets/images/category/${cat.img}`}
                                                     alt="category"
                                                 />
                                                 <p>{cat.name}</p>
-                                            </div>
+                                            </Link>
                                         </div>
                                     </SwiperSlide>
                                 ))}
