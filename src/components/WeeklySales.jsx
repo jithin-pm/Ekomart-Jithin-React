@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import './styles/WeeklySales.css';
 import { FaCartPlus, FaEye, FaStar } from 'react-icons/fa';
 import { CiHeart } from 'react-icons/ci';
@@ -32,9 +32,9 @@ const ProductCard = ({ product }) => (
         <div className="single-shopping-card-one deals-of-day">
             <div className="onsale-offer"><span>On sale</span></div>
             <div className="image-and-action-area-wrapper">
-                <Link className="thumbnail-preview" to="/">
+                <div className="thumbnail-preview">
                     <img src={`/assets/images/grocery/${product.image}`} alt="grocery" />
-                </Link>
+                </div>
                 <div className="action-share-option">
                     <div className="single-action openuptip message-show-action" data-flow="up" title="Add To Wishlist">
                         <CiHeart className='text-3xl' />
@@ -51,18 +51,17 @@ const ProductCard = ({ product }) => (
                 <div className="start-area-rating">
                     {[...Array(5)].map((_, i) => <FaStar key={i} className='text-amber-400' />)}
                 </div>
-                <Link to="/"><h4 className="title">{product.title}</h4></Link>
+                <div><h4 className="title">{product.title}</h4></div>
                 <span className="availability">500g Pack</span>
                 <div className="price-area">
                     <span className="current">{product.price}</span>
                     <div className="previous">{product.oldPrice}</div>
                 </div>
                 <div className="cart-counter-action">
-                    <Link className="rts-btn btn-primary add-to-card radious-sm with-icon" to="/">
+                    <button className="rts-btn btn-primary add-to-card radious-sm with-icon" type="button">
                         <div className="btn-text">Add</div>
-
                         <div className="arrow-icon"><FaCartPlus className='text-3xl text-white' /></div>
-                    </Link>
+                    </button>
                 </div>
             </div>
         </div>

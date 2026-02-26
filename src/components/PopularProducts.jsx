@@ -46,29 +46,29 @@ const PopularProducts = () => {
                                 <div className="col-lg-3 col-md-6 col-sm-6 col-12" key={product.id}>
                                     <div className="single-shopping-card-one popular-product-card">
                                         <div className="image-and-action-area-wrapper">
-                                            <a className="thumbnail-preview" href="#">
+                                            <div className="thumbnail-preview">
                                                 <div className="badge">
                                                     <span className='-mt-6 -px-6 font-bolder'>25% <br />Off</span>
                                                     <FaBookmark className='text-[48px] pl-2 text-amber-400' />
                                                 </div>
                                                 <img src={`/assets/images/grocery/${product.image}`} alt="grocery" />
-                                            </a>
+                                            </div>
                                             <div className="action-share-option">
                                                 <div className="single-action openuptip message-show-action" data-flow="up" title="Add To Wishlist">
-                                                   <CiHeart className='text-3xl' />
+                                                    <CiHeart className='text-3xl' />
                                                 </div>
                                                 <div className="single-action openuptip" data-flow="up" title="Compare">
                                                     <IoMdRepeat className='text-3xl' />
                                                 </div>
                                                 <div className="single-action openuptip cta-quickview product-details-popup-btn" data-flow="up" title="Quick View">
-                                                  <FaEye className='text-3xl' />
+                                                    <FaEye className='text-3xl' />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="body-content">
-                                            <a href="#">
+                                            <div>
                                                 <h5 className='tittle'>{product.title}</h5>
-                                            </a>
+                                            </div>
                                             <span className="availability">{product.weight}</span>
                                             <div className="price-area">
                                                 <span className="current">{product.price}</span>
@@ -82,10 +82,10 @@ const PopularProducts = () => {
                                                         <MdKeyboardArrowDown className='text-3xl' />
                                                     </div>
                                                 </div>
-                                                <a className="rts-btn btn-primary add-to-card radious-sm with-icon" href="#">
+                                                <button className="rts-btn btn-primary add-to-card radious-sm with-icon" type="button">
                                                     <div className="btn-text">Add</div>
                                                     <div className="arrow-icon"><FaCartPlus className='text-3xl' /></div>
-                                                </a>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>

@@ -27,11 +27,11 @@ const Banner = () => {
                                         <span className="pre">Get up to 30% off on your first $150 purchase</span>
                                         <h1 className="title">Don't miss our amazing <br />grocery deals</h1>
                                         <p className="dsicription">We have prepared special discounts for you on grocery products. Don't miss these opportunities...</p>
-                                        <a className="rts-btn btn-primary radious-sm with-icon" href="/shop">
+                                        <button className="rts-btn btn-primary radious-sm with-icon" type="button">
                                             <div className="btn-text">Shop Now</div>
                                             <div className="arrow-icon"><FaArrowRight size={16} /></div>
                                             <div className="arrow-icon"><FaArrowRight size={16} /></div>
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -47,11 +47,11 @@ const Banner = () => {
                                         <span className="pre">Get up to 10% off on your first $250 purchase</span>
                                         <h1 className="title">Check out our incredible <br />deals today</h1>
                                         <p className="dsicription">We have prepared special discounts for you on grocery products. Don't miss these opportunities...</p>
-                                        <a className="rts-btn btn-primary radious-sm with-icon" href="/shop">
+                                        <button className="rts-btn btn-primary radious-sm with-icon" type="button">
                                             <div className="btn-text">Shop Now</div>
                                             <div className="arrow-icon"><FaArrowRight size={16} /></div>
                                             <div className="arrow-icon"><FaArrowRight size={16} /></div>
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>

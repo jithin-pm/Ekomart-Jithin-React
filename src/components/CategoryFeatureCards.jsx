@@ -16,13 +16,13 @@ const CategoryFeatureCards = () => {
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12" key={index}>
                             <div className={`single-feature-card ssthree style-three bg_image ${card.className}`}>
                                 <div className="content-area">
-                                    <a className="rts-btn btn-primary" href="/shop">Weekend Discount</a>
+                                    <span className="rts-btn btn-primary">Weekend Discount</span>
                                     <h3 className="title">{card.title} <br /><span>{card.subtitle}</span></h3>
-                                    <a className="shop-now-goshop-btn" href="/shop">
+                                    <div className="shop-now-goshop-btn">
                                         <span className="text">Shop Now</span>
                                         <div className="plus-icon"><i className="fa-sharp fa-regular fa-plus"></i></div>
                                         <div className="plus-icon"><i className="fa-sharp fa-regular fa-plus"></i></div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

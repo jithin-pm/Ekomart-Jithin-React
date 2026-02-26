@@ -1,3 +1,4 @@
+/* Banner nav buttons — hidden by default, visible on hover */
 .banner-three-swiper-main-wrapper .swiper-button-next,
 .banner-three-swiper-main-wrapper .swiper-button-prev {
   position: absolute;
@@ -6,15 +7,24 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #629D23;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.7);
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   color: white;
-  opacity: 0.8;
-  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
   z-index: 50;
   cursor: pointer;
+}
+
+/* Show buttons on banner hover */
+.banner-three-swiper-main-wrapper:hover .swiper-button-next,
+.banner-three-swiper-main-wrapper:hover .swiper-button-prev {
+  opacity: 0.85;
+  visibility: visible;
 }
 
 .banner-three-swiper-main-wrapper .swiper-button-next svg,
@@ -33,6 +43,7 @@
 .banner-three-swiper-main-wrapper .swiper-button-next:hover,
 .banner-three-swiper-main-wrapper .swiper-button-prev:hover {
   opacity: 1;
+  background: #fff;
 }
 
 .banner-three-swiper-main-wrapper .swiper-button-next:hover svg,
@@ -42,11 +53,11 @@
 }
 
 .banner-three-swiper-main-wrapper .swiper-button-next {
-  right: 20px;
+  right: 30px;
 }
 
 .banner-three-swiper-main-wrapper .swiper-button-prev {
-  left: 20px;
+  left: 30px;
 }
 
 .swiper-button-between {
