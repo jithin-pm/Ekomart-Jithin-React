@@ -1,0 +1,41 @@
+#side-bar .mobile-menu-main .metismenu.mainmenu {
+  padding: 0 0 !important;
+}
+
+#side-bar .inner-main-wrapper-desk {
+  display: block;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #side-bar .inner-main-wrapper-desk {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #side-bar .inner-main-wrapper-desk {
+    display: none;
+  }
+}
+
+#side-bar .mobile-menu-main {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #side-bar .mobile-menu-main {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #side-bar .mobile-menu-main {
+    display: block;
+  }
+}
+
+.mobile-menu-main nav ul {
+  padding: 0 20px;
+  display: block;
+}

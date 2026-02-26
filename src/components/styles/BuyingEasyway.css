@@ -1,0 +1,63 @@
+.easyway-buying-area-wrapper {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .easyway-buying-area-wrapper {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .easyway-buying-area-wrapper {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .easyway-buying-area-wrapper {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+}
+
+.easyway-buying-area-wrapper .single-easy-way-buying-area {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.easyway-buying-area-wrapper .single-easy-way-buying-area .icon {
+  height: 45px;
+  width: 45px;
+  border: 1px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.easyway-buying-area-wrapper .single-easy-way-buying-area .inforemation .title {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .easyway-buying-area-wrapper .single-easy-way-buying-area .inforemation .title {
+    font-size: 18px;
+  }
+}
+
+.easyway-buying-area-wrapper .single-easy-way-buying-area .inforemation p {
+  color: #74787C;
+  margin: 0;
+}

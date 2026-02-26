@@ -1,0 +1,31 @@
+/* Styles for HeaderTopBar component copied from global style.css */
+
+.header-top-area {
+  background: var(--color-primary);
+  padding: 10px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-top-area {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-top-area {
+    display: none;
+  }
+}
+
+.header-top-area p.disc {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1199px) {
+  .header-top-area p.disc {
+    font-size: 13px;
+  }
+}

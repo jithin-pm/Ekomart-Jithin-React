@@ -1,0 +1,99 @@
+.banner-three-swiper-main-wrapper .swiper-button-next,
+.banner-three-swiper-main-wrapper .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #629D23;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: white;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  z-index: 50;
+  cursor: pointer;
+}
+
+.banner-three-swiper-main-wrapper .swiper-button-next svg,
+.banner-three-swiper-main-wrapper .swiper-button-prev svg {
+  width: 20px !important;
+  height: 20px !important;
+  display: block;
+}
+
+/* remove swiper-generated arrows */
+.banner-three-swiper-main-wrapper .swiper-button-next::after,
+.banner-three-swiper-main-wrapper .swiper-button-prev::after {
+  display: none;
+}
+
+.banner-three-swiper-main-wrapper .swiper-button-next:hover,
+.banner-three-swiper-main-wrapper .swiper-button-prev:hover {
+  opacity: 1;
+}
+
+.banner-three-swiper-main-wrapper .swiper-button-next:hover svg,
+.banner-three-swiper-main-wrapper .swiper-button-prev:hover svg {
+  color: #629D23;
+  transition: color 0.3s ease;
+}
+
+.banner-three-swiper-main-wrapper .swiper-button-next {
+  right: 20px;
+}
+
+.banner-three-swiper-main-wrapper .swiper-button-prev {
+  left: 20px;
+}
+
+.swiper-button-between {
+  position: relative;
+  z-index: 20;
+}
+
+.banner-bg-full_1 {
+  background-image: url(../images/banner/03.webp);
+  height: 600px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-bg-full_1.img-two {
+  background-image: url(../images/banner/09.webp);
+}
+
+.banner-inner-content-three .pre {
+  color: #EABC5E;
+  font-weight: 600;
+}
+
+.banner-inner-content-three .title {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+/* Responsive title size for small screens */
+@media (max-width: 768px) {
+  .banner-inner-content-three .title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-inner-content-three .title {
+    font-size: 42px;
+  }
+}
+
+.arrow-icon {
+  font-size: 8px;
+}

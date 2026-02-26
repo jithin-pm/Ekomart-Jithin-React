@@ -1,0 +1,239 @@
+/* Styles specific to HeaderSearchBar component */
+
+/* copied from global style.css to isolate header-search bar styles */
+
+.search-header-area-main {
+  padding: 31px 0;
+  border-top: 1px solid #E2E2E2;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .search-header-area-main {
+    display: none;
+  }
+}
+
+.category-icon {
+  margin-right: 16px;
+  font-size: 18px;
+  color: #74787C;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-header-area-main {
+    display: none;
+  }
+}
+
+.logo-search-category-wrapper .category-search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-search-category-wrapper .category-search-wrapper .location-area {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border: 1px solid #E2E2E2;
+  padding: 16px 16px 16px 0;
+  margin-right: 20px;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1270px) {
+  .logo-search-category-wrapper .category-search-wrapper .location-area {
+    display: none;
+  }
+}
+
+.logo-search-category-wrapper .category-search-wrapper .location-area .icon {
+  padding: 16px;
+  border-right: 1px solid #E2E2E2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.logo-search-category-wrapper .category-search-wrapper .location-area .information span {
+  font-size: 12px;
+  color: #74787C;
+}
+
+.logo-search-category-wrapper .category-search-wrapper .location-area .information p {
+  color: #2C3C28;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .logo-search-category-wrapper .category-search-wrapper .location-area .information p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .logo-search-category-wrapper .category-search-wrapper .location-area .information p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo-search-category-wrapper .category-search-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .logo-search-category-wrapper .category-search-wrapper {
+    display: none;
+  }
+}
+
+.logo-search-category-wrapper .category-search-wrapper .category-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  border-radius: 5px;
+  background: #F3F4F6;
+  padding: 15px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #2C3C28;
+  position: relative;
+}
+
+.logo-search-category-wrapper .category-search-wrapper .search-header {
+  flex-basis: 70%;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo-search-category-wrapper .category-search-wrapper .search-header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .logo-search-category-wrapper .category-search-wrapper .search-header {
+    display: none;
+  }
+}
+
+.logo-search-category-wrapper .category-search-wrapper .search-header input {
+  width: 802px;
+  height: 50px;
+  background: #F3F4F6;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding-right: 150px;
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+  .logo-search-category-wrapper .category-search-wrapper .search-header input {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .logo-search-category-wrapper .category-search-wrapper .search-header input {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .logo-search-category-wrapper .category-search-wrapper .search-header input {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo-search-category-wrapper .category-search-wrapper .search-header input {
+    width: 350px;
+  }
+}
+
+.logo-search-category-wrapper .category-search-wrapper .search-header input:focus {
+  border: 1px solid var(--color-primary);
+}
+
+.logo-search-category-wrapper .category-search-wrapper .search-header a.rts-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+}
+
+/* account / wishlist / cart block */
+.accont-wishlist-cart-area-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.accont-wishlist-cart-area-header .btn-border-only span.text {
+  margin-left: 5px;
+}
+
+.accont-wishlist-cart-area-header .btn-border-only .text {
+  margin-left: 5px;
+}
+
+.accont-wishlist-cart-area-header .wishlist {
+  position: relative;
+}
+
+.accont-wishlist-cart-area-header .wishlist i {
+  font-size: 18px;
+}
+
+.accont-wishlist-cart-area-header .wishlist span.number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 2px 5px;
+}
+
+.accont-wishlist-cart-area-header .cart {
+  position: relative;
+}
+
+.accont-wishlist-cart-area-header .cart i {
+  font-size: 18px;
+}
+
+.accont-wishlist-cart-area-header .cart span.number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 2px 5px;
+}
+
+/* modifiers for header style two */
+.header-style-two.bg-primary-header .search-header-area-main .accont-wishlist-cart-area-header .btn-border-only {
+  /* copied from global style, keep as needed */
+}
+
+.header-style-two.bg-primary-header .search-header-area-main .accont-wishlist-cart-area-header .btn-border-only:hover {
+  /* hover changes */
+}
+
+.header-style-two.bg-primary-header .search-header-area-main .accont-wishlist-cart-area-header .btn-border-only:hover.wishlist i::after {
+  /* override */
+}
+
+.header-style-two.bg-primary-header .search-header-area-main .accont-wishlist-cart-area-header .btn-border-only:hover.cart i::after {
+  /* override */
+}

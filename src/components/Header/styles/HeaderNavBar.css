@@ -1,0 +1,113 @@
+/* Styles for HeaderNavBar component */
+
+/* base navigation bar */
+.rts-header-nav-area-one {
+  background: #F3F4F6;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.rts-header-nav-area-one .nav-area ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.rts-header-nav-area-one .nav-area ul.submenu {
+  display: block;
+}
+
+.rts-header-nav-area-one .nav-area ul.submenu li {
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+
+.rts-header-nav-area-one .nav-area ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.rts-header-nav-area-one .nav-area ul li a {
+  padding: 22px 20px;
+  display: block;
+  font-weight: 600;
+  color: #2C3C28;
+  transition: 0.3s;
+}
+
+.rts-header-nav-area-one .nav-area ul.submenu li a {
+  padding: 10px 20px;
+}
+
+.rts-header-nav-area-one .nav-area ul li a:hover {
+  color: var(--color-primary) !important;
+}
+
+.rts-header-nav-area-one .nav-area ul li.parent:first-child a {
+  padding-left: 0;
+}
+
+.nav-and-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-and-btn-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-and-btn-wrapper {
+    display: none;
+  }
+}
+
+.nav-and-btn-wrapper .right-btn-area {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1199px) {
+  .nav-and-btn-wrapper .right-btn-area {
+    gap: 2px;
+  }
+}
+
+.nav-and-btn-wrapper .right-btn-area .btn-narrow {
+  font-weight: 600;
+  transition: 0.3s !important;
+  color: #2C3C28;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-and-btn-wrapper .right-btn-area .btn-narrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-and-btn-wrapper .right-btn-area .btn-narrow {
+    display: none;
+  }
+}
+
+/* responsive background colour adjustments */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .rts-header-nav-area-one {
+    background: #ffffff !important;
+    border-bottom: 1px solid #E2E2E2;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .rts-header-nav-area-one {
+    background: #ffffff !important;
+    border-bottom: 1px solid #E2E2E2;
+  }
+}

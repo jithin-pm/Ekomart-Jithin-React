@@ -1,0 +1,38 @@
+.rts-copyright-area-two {
+  background: #1A1A1A;
+  border-top: 1px solid #353535;
+}
+
+.rts-copyright-area-two .copyright-arae-two-wrapper {
+  display: flex;
+  padding: 28px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 575px) {
+  .rts-copyright-area-two .copyright-arae-two-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+.rts-copyright-area-two .copyright-arae-two-wrapper p {
+  color: #fff;
+  margin: 0;
+}
+
+.rts-copyright-area-two .copyright-arae-two-wrapper span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.payment-processw-area {
+  /* you can add styles if needed here */
+}
+
+.disc {
+  /* global disc styling may already exist */
+}

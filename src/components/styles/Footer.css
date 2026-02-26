@@ -1,0 +1,99 @@
+.rts-footer-area-two {
+  background: #1A1A1A;
+  padding: 100px 0 78px 0;
+}
+
+.footer-two-main-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-two-main-wrapper {
+    gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-two-main-wrapper {
+    gap: 25px;
+  }
+}
+
+.footer-two-main-wrapper .contact-information {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-two-main-wrapper .start {
+  flex-basis: 24%;
+}
+
+.footer-two-main-wrapper .start p.disc {
+  color: rgb(161, 161, 161);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-two-main-wrapper.single-footer-wized {
+  flex-basis: 20%;
+}
+
+.footer-two-main-wrapper form {
+  position: relative;
+}
+
+.footer-two-main-wrapper form input {
+  height: 50px;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 14px;
+  color: #74787C;
+}
+
+.footer-two-main-wrapper form button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  min-width: 40px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+.footer-two-main-wrapper form button svg {
+  display: block;
+  margin: 0;
+}
+
+.footer-two-main-wrapper .single-footer-wized .footer-title {
+  color: #fff;
+}
+
+.footer-two-main-wrapper .single-footer-wized ul li a {
+  color: rgb(161, 161, 161);
+}
+
+.single-contact-information-area {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.single-contact-information-area p.disc {
+  font-size: 16px;
+  color: #fff;
+}
+
+.single-contact-information-area p.disc a {
+  font-size: 24px;
+  color: var(--color-primary);
+  font-weight: 600;
+}
